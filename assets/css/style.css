@@ -248,7 +248,6 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  /* background: url("../img/hero-bg.jpg") top center; */
   background-color: #000;
   background-size: cover;
 }
@@ -325,6 +324,7 @@ section {
 
 .section-title {
   padding-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .section-title h2, .contact-heading {
@@ -391,7 +391,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Resume
+# Summary
 --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
@@ -421,7 +421,7 @@ section {
 
 .resume .resume-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: rgb(223, 217, 217);
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -561,9 +561,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Skills
 --------------------------------------------------------------*/
-.services .icon-box {
+.skills .icon-box {
   margin-bottom: 20px;
 }
 .icon-box{
@@ -582,7 +582,7 @@ section {
     padding-bottom: 14px;
 }
 
-.services .icon {
+.skills .icon {
   white-space: nowrap;
   float: left;
   display: flex;
@@ -596,35 +596,35 @@ section {
   border: 1px solid #149ddd;
 }
 
-.services .icon i {
+.skills .icon i {
   color: #fff;
   font-size: 24px;
 }
 
-.services .icon-box:hover .icon {
+.skills .icon-box:hover .icon {
   background: #fff;
 }
 
-.services .icon-box:hover .icon i {
+.skills .icon-box:hover .icon i {
   color: #149ddd;
 }
 
-.services .title {
+.skills .title {
   margin-left: 80px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.services .title a {
+.skills .title a {
   color: #343a40;
 }
 
-.services .title a:hover {
+.skills .title a:hover {
   color: #149ddd;
 }
 
-.services .description {
+.skills .description {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
@@ -659,59 +659,13 @@ section {
   padding-bottom: 8px;
 }
 
+.contact .email-form .form-group input{
+    color: #eee;
+}
+
 .form-control, .submit-button {
   background-color: transparent !important;
   border: 1px solid white;
-}
-
-.contact .email-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
-}
-
-.contact .email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .email-form .loading {
-  display: none;
-  background: transparent;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
 }
 
 .contact .email-form input, .contact .email-form textarea {
@@ -726,14 +680,13 @@ section {
 
 .contact .email-form textarea {
   padding: 10px 12px;
+  color: #c8d6e5;
 }
 
 .contact .email-form button[type="submit"] {
-  /* background: #149ddd; */
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
-  /* border-radius: 4px; */
 }
 
 .contact .email-form button[type="submit"]:hover {
@@ -741,20 +694,3 @@ section {
   color: #76cff8;
 }
 
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
