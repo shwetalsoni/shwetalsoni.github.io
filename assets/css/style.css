@@ -563,15 +563,22 @@ section {
 .services .icon-box {
   margin-bottom: 20px;
 }
+.icon-box{
+    
+}
+.skill-tag{
+    color: #fff;
+
+}
 
 .services .icon {
   float: left;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 54px;
-  height: 54px;
-  background: #149ddd;
+  width: 64px;
+  height: 64px;
+  background: #88d9ff;
   border-radius: 50%;
   transition: 0.5s;
   border: 1px solid #149ddd;
