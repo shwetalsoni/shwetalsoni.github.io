@@ -2,6 +2,45 @@
      Background Animation
 ----------------------------------------------------------- */
 
+.stars, .twinkling, .clouds {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  z-index: 0;
+  background: #000 url("https://image.ibb.co/mjnygo/stars.png") repeat top center;
+}
+
+.twinkling {
+  z-index: 1;
+  background: transparent url("https://image.ibb.co/ir1DE8/twinkling.png") repeat top center;
+  animation: move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # General
@@ -209,7 +248,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  /* background: url("../img/hero-bg.jpg") top center; */
+  background-color: #000;
   background-size: cover;
 }
 
@@ -232,10 +272,11 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 120px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #89e2f7;
+  margin-bottom: 40px;
 }
 
 #hero p {
@@ -249,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #84d3f8;
 }
 
 @media (min-width: 1024px) {
@@ -260,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 60px;
     line-height: 36px;
   }
   #hero h2 {
@@ -279,7 +320,7 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: #05080f;
 }
 
 .section-title {
@@ -292,22 +333,23 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
-}
+  color: #fff;
 
+}
 .section-title h2::after {
   content: '';
   position: absolute;
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #84d3f8;
   bottom: 0;
   left: 0;
 }
 
 .section-title p {
   margin-bottom: 0;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
@@ -316,7 +358,11 @@ section {
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #89e2f7;
+}
+.about .break{
+    background-color: rgb(128, 123, 123);
+    margin-bottom: 7%;
 }
 
 .about .content ul {
@@ -326,6 +372,7 @@ section {
 
 .about .content ul li {
   padding-bottom: 10px;
+  color: #fff;
 }
 
 .about .content ul i {
@@ -336,6 +383,11 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+  color: #f9f9f9;
+}
+.profile-img{
+    filter: grayscale(100%) contrast(130%);
+    
 }
 
 /*--------------------------------------------------------------
@@ -430,8 +482,8 @@ section {
   font-size: 26px;
   font-weight: 700;
   margin-top: 20px;
-  margin-bottom: 20px;
-  color: #050d18;
+  margin-bottom: 40px;
+  color: #84d3f8;
 }
 
 .resume .resume-item {
@@ -447,7 +499,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #c8d6e5;
   margin-bottom: 10px;
 }
 
@@ -466,6 +518,10 @@ section {
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  color: #dff3fc;
+}
+.resume .resume-item p{
+  color: #dff3fc;
 }
 
 .resume .resume-item:last-child {
